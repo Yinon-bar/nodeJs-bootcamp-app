@@ -8,7 +8,7 @@ app.get("/api/v1/bootcamps", (req, res) => {
   res.status(200).json({ success: true, msg: "All Bootcamps" });
 });
 app.post("/api/v1/bootcamps", (req, res) => {
-  res.status(200).json({ success: true, msg: "Create new bootcamp!" });
+  res.status(200).json({ success: true, msg: "Create new bootcamp" });
 });
 
 app.listen(PORT, () => {
