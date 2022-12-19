@@ -17,5 +17,7 @@ app.use("/api/v1/bootcamps", bootcampsController.router);
 const PORT = 3004;
 
 app.listen(PORT, () => {
-  console.log("Listening to http:/localhost:3004 requests".green.bold);
+  console.log(
+    "Listening to http:/localhost:3004 requests".green.underline.bold
+  );
 });
