@@ -2,6 +2,7 @@ const express = require("express");
 const logger = require("./3-middleware/logger");
 const bootcampsController = require("./6-controllers/bootcampsController");
 const app = express();
+const colors = require("colors");
 
 require("./1-data/mongoConnect");
 
@@ -16,5 +17,5 @@ app.use("/api/v1/bootcamps", bootcampsController.router);
 const PORT = 3004;
 
 app.listen(PORT, () => {
-  console.log("Listening to http:/localhost:3004 requests");
+  console.log("Listening to http:/localhost:3004 requests".green.bold);
 });
