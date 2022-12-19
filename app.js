@@ -1,10 +1,9 @@
 const express = require("express");
-
 const logger = require("./3-middleware/logger");
-
 const bootcampsController = require("./6-controllers/bootcampsController");
-
 const app = express();
+
+require("./1-data/mongoConnect");
 
 app.use(express.json());
 
